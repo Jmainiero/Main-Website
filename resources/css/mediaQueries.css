@@ -1,0 +1,25 @@
+@media only screen and (max-width:768px) {
+  .traits img {
+    width: 15%;
+  }
+
+  header {
+    background-attachment: scroll;
+  }
+
+}
+
+@media only screen and (max-width:415px) {
+  * {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 4fr);
+  }
+
+}
+
+
+
+@media only screen and (max-width:375px) {}

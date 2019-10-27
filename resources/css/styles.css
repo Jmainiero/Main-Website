@@ -1,0 +1,454 @@
+/*----------------*/
+
+/*	 Basic Setup  */
+
+/*----------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Raleway", "Lato", "Sans-Serif";
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/img-1-min.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+h2:after {
+  display: block;
+  height: 5px;
+  background-color: #7a9eb1;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h1:after {
+  display: block;
+  height: 3px;
+  background-color: black;
+  content: " ";
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h1:before {
+  display: block;
+  height: 3px;
+  background-color: black;
+  content: " ";
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin: 5%;
+}
+
+.wrapper {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  color: #444;
+}
+
+.grid-about-me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5%;
+}
+
+.grid-about-me-item {
+  padding: 5%;
+}
+
+.development {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.analytics {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  padding: 0;
+}
+
+.about-experience {
+  grid-row: 2 / span 2;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 1%;
+  font-size: 150%;
+  width: 500px;
+}
+
+/*----------------*/
+
+/*	  Headings 	  */
+
+/*----------------*/
+
+h1 {
+  font-size: 64px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Oswald";
+  font-weight: 700;
+  text-align: center;
+}
+
+/*----------------*/
+/*	  NAV    	    */
+/*----------------*/
+
+.sidenav {
+  height: 100%;
+  width: 5em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav img {
+  width: 100%;
+  margin-top: 25%;
+  padding: 0.5em;
+}
+
+
+
+/*----------------*/
+/*	  Header 	    */
+/*----------------*/
+
+header {
+  height: 100vh;
+}
+
+.hero-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.smoothScrollBtn {
+  border-radius: 30px;
+  width: 50px;
+  height: 37px;
+  position: absolute;
+  bottom: 75px;
+  z-index: 99;
+  text-indent: -9999 !important;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: left !important;
+  cursor: pointer;
+}
+
+/*----------------*/
+
+/*	  ABOUT ME	  */
+
+/*----------------*/
+
+.about-me {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2% 10% 2% 10%;
+}
+
+#headshot {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.about-me img {
+  width: 10%;
+}
+
+.about-me p {
+  font-family: "Lato";
+}
+
+.about-experience h5 {
+  text-align: left;
+  font-style: italic;
+}
+
+.about-me button {
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-top: 3em;
+  border: 2px solid #ffffff;
+}
+
+.about-me button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+/*----------------*/
+
+/*	  Instagram 	*/
+
+/*----------------*/
+
+.instagram-container p {
+  font-family: "Lato";
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.instagram-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2% 10% 2% 10%;
+  padding: 0 2% 2% 2%;
+}
+
+.col-lg-3 {
+  padding: 1%;
+}
+
+.gallery img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.gallery img:hover {
+  filter: grayscale();
+}
+
+/*  Projects */
+
+.projects-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 2% 10% 2% 10%;
+}
+
+.projects-container h2 {
+  margin-bottom: 3%;
+}
+
+.box img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+/*  CONTACT ME  */
+
+.section-contact-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2.5% 0 2.5% 0;
+  color: #fff;
+  margin: 2% 10% 2% 10%;
+}
+
+.parent-form {
+  display: grid;
+}
+
+form {
+  text-align: center;
+  line-height: 300%;
+}
+
+form button {
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-bottom: 1em;
+  border: 2px solid #ffffff;
+}
+
+form button:hover {
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+
+input {
+  display: block;
+  border: 2px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 35px;
+  width: 50%;
+  margin: 2% auto 2% auto;
+  margin-bottom: 1em;
+}
+
+textarea {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffffff;
+  width: 50%;
+  height: 120px;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  overflow: hidden;
+  height: auto;
+  margin-left: 5em;
+}
+
+.footer-social {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-social:hover {
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+/* OVERLAY*/
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.box:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
