@@ -78,14 +78,6 @@ body {
   color: inherit;
   letter-spacing: 1px;
   transform: skewX(-15deg);
-
-  @include respond(tab-port) {
-    font-size: 3rem;
-  }
-
-  @include respond(phone) {
-    font-size: 2.5rem;
-  }
 }
 
 .paragraph {
